@@ -1,0 +1,29 @@
+body{
+font-family: 'Noto Sans JP', sans-serif;
+font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(82, 20, 20);
+}
+  h3 {
+    font-size: 18px;
+  }
+
+li{
+  list-style: none;
+}
+
+.nav-global{
+ list-style-type:none;
+}
+
+input,textarea{
+  box-sizing: border-box;
+}
+textarea{
+  width:70%;
+  height:12em;
+  font-size:16px;
+}
