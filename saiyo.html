@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kakucss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>アルバイト採用はこちらから</title>
+</head>
+<body>
+    <h2>アルバイト募集中！</h2>
+    <p>現在、かくうカフェでは働く仲間を募集中です！</p>
+<h3>採用フォーム</h3>
+    <form action="saiyo.php" method="POST">
+        <p>お名前<br>
+        <input type="text" name="name"></p>
+        <p>お電話番号<br>
+        <input type="tel" name="tel"></p>
+        <p>メールアドレス<br>
+        <input type="email" name="email"></p>
+        <p><label for="comment">志望動機</label><br>
+        <textarea name="comment"></textarea></p>
+        <input type="submit" value="送信" id="submit"></p>
+    </form>
+</body>
+</html>
