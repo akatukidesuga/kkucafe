@@ -1,8 +1,12 @@
+@charset "UTF-8";
+
 body{
 font-family: 'Noto Sans JP', sans-serif;
 font-weight: 300;
 }
-
+h1{
+  color:rgb(82, 20, 20);
+}
 h2 {
     font-size: 30px;
     color: rgb(82, 20, 20);
@@ -13,6 +17,10 @@ h2 {
 
 li{
   list-style: none;
+}
+.menuber a{
+  text-decoration:none;
+  color:snow;
 }
 
 .nav-global{
@@ -26,4 +34,45 @@ textarea{
   width:70%;
   height:12em;
   font-size:16px;
+}
+
+/*メニューバー*/
+.menuber{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+  padding:5px;
+  background: rgb(82, 20, 20);
+  color:#d6d2d2;
+}
+
+.info{
+ width:100%;
+ border:2px solid rgb(82, 20, 20);
+ text-align: center;
+ margin: 0 auto;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:600px){
+html{
+    font-size: 85%;
+  }
+
+.menuber{
+  flex-direction: column;
+  max-width: 100%;
+  background-size: cover;
+}
+
+h2{
+max-width: 80%;
+}
+
+h3{
+  max-width: 60%;
+}
+.info{
+ max-width:100%;
+  }
 }
