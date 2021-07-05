@@ -36,7 +36,13 @@ textarea{
   font-size:16px;
 }
 
+.headline{
+text-align: center;
+}
 /*メニューバー*/
+.main{
+  text-align: center;
+}
 .menuber{
   list-style-type: none;
   display:flex;
@@ -47,11 +53,11 @@ textarea{
 }
 
 .info{
- width:100%;
  border:2px solid rgb(82, 20, 20);
  text-align: center;
  margin: 0 auto;
 }
+
 
 /*RESPONSIVE*/
 @media screen and (max-width:600px){
@@ -75,4 +81,9 @@ h3{
 .info{
  max-width:100%;
   }
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+    }
 }
