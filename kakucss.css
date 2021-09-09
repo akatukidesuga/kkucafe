@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+/*基本*/
 body{
 font-family: 'Noto Sans JP', sans-serif;
 font-weight: 300;
 }
+article{display: block;}
+
 h1{
   color:rgb(82, 20, 20);
 }
@@ -19,9 +22,9 @@ li{
   list-style: none;
 }
 
-main{
-  text-align: center;
-}
+/*リンク設定*/
+a{text-decoration: none;
+color:#FFF;}
 
 .menuber a{
   text-decoration:none;
@@ -44,6 +47,7 @@ textarea{
 .headline{
 text-align: center;
 }
+
 /*メニューバー*/
 .main{
   text-align: center;
@@ -57,12 +61,16 @@ text-align: center;
   color:#d6d2d2;
 }
 
-.info{
- border:2px solid rgb(82, 20, 20);
- text-align: center;
- margin: 0 auto;
+/*フッター*/
+#footer{
+  clear: both;
+  background: rgb(82, 20, 20);
+  color:#fff;
 }
-
+.tel strong{
+  font-size: 20px;
+  font-weight: bold;
+}
 
 /*RESPONSIVE*/
 @media screen and (max-width:600px){
