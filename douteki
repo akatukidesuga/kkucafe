@@ -1,0 +1,38 @@
+$(function(){
+    var intervalId;
+    setTimer();
+    function setTimer(){
+        intervalId=setInterval(autoClick,5000);
+    }
+    function autoClick(){
+        $('.slide').children('a.next').click();
+    }
+
+    function changeImage($click){
+        console.log($click);
+        var $currrent=$click.siblings('.container').children('.current');
+        var $new;
+        var findselector='';
+
+        if($click.hasClass('next')){
+            $new=$currrent.next();
+            findselector=':first-child';
+        }else{
+            $new=$currrent.prev();
+            findselector=':last-child';
+        }
+
+        if($new.length ==0){
+            $new=$currrent.siblings(findselector);
+        }
+        $currrent.removeClass('current');
+        $new.addClass('current');
+        settimer();
+    }
+$('.slide')
+    .on('click','>a',function(event){
+        event.preventDefault();
+        clearInterval(intervalId);
+        changeImage($(this));
+    });
+});
