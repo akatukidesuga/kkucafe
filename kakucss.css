@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*基本サイト項目*/
+/*基本*/
 body{
 font-family: 'Noto Sans JP', sans-serif;
 font-weight: 300;
@@ -19,14 +19,14 @@ h2 {
   }
 
 li{
-  display: block;
   list-style: none;
-  text-align: center;
 }
 
 /*リンク設定*/
 a{text-decoration: none;
 color:#FFF;}
+a:hover{color:#006699;}
+a:active,a:focus{outline:0;}
 
 .menuber a{
   text-decoration:none;
@@ -50,6 +50,34 @@ textarea{
 text-align: center;
 }
 
+/*メニューバー*/
+.main{
+  text-align: center;
+}
+.menuber{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+  background: rgb(82, 20, 20);
+  padding: 3px;
+  color:#d6d2d2;}
+  a:hover{color:#006699;}
+  a:active,a:focus{outline:0;}
+
+
+/*フッター*/
+#footer{
+  clear: both;
+  background: rgb(82, 20, 20);
+  color:#fff;
+  margin: -5px;
+}
+.tel strong{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*スライドショー関連*/
 /*スライドショー全体のスタイル*/
 .slide{
   position: relative;
@@ -58,7 +86,7 @@ text-align: center;
   font-size:0;/*画像下の隙間を埋める為*/
 }
 .slide img{
-  max-width: 100%;
+  max-width: 90%;
 }
 /*写真の配置*/
 .slide > .container{
@@ -112,31 +140,7 @@ text-align: center;
 .slide a.next:active{
   background: 50% 50% no-repeat;
 }
-/* スライドショー設定 */
-
-/*メニューバー*/
-.main{
-  text-align: center;
-}
-.menuber{
-  list-style-type: none;
-  display:flex;
-  justify-content: space-around;
-  padding:5px;
-  background: rgb(82, 20, 20);
-  color:#d6d2d2;
-}
-
-/*フッター*/
-#footer{
-  clear: both;
-  background: rgb(82, 20, 20);
-  color:#fff;
-}
-.tel strong{
-  font-size: 20px;
-  font-weight: bold;
-}
+/*スライドショー終わり*/
 
 /*RESPONSIVE*/
 @media screen and (max-width:600px){
