@@ -89,11 +89,11 @@ text-align: center;
 .slide{
   position: relative;
   margin: 0 auto;
-  max-width:1000px;
+  max-width:1080px;
   font-size:0;/*画像下の隙間を埋める為*/
 }
 .slide img{
-  max-width: 90%;
+  max-width: 100%;
 }
 /*写真の配置*/
 .slide > .container{
