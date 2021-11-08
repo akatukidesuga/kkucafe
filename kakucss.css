@@ -27,7 +27,7 @@ li{
 
 /*リンク設定*/
 a{text-decoration: none;
-color:#FFF;}
+color:#000;}
 a:hover{color:#006699;}
 a:active,a:focus{outline:0;}
 
@@ -68,7 +68,16 @@ text-align: center;
   a:hover{color:#006699;}
   a:active,a:focus{outline:0;}
 
-
+/*メインコンテンツ*/
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:20px 20px;
+}
+.box p{
+  max-width: 90%;
+}
 /*フッター*/
 #footer{
   text-align: center;
@@ -89,15 +98,11 @@ text-align: center;
 .slide{
   position: relative;
   margin: 0 auto;
-<<<<<<< HEAD
-  max-width:1000px;
-=======
-  max-width:1080px;
->>>>>>> 4525f9bd04c7fb545e270d8c0cb7a0671e1be25c
+  max-width:960px;
   font-size:0;/*画像下の隙間を埋める為*/
 }
 .slide img{
-  max-width: 100%;
+  max-width: 90%;
 }
 /*写真の配置*/
 .slide > .container{
