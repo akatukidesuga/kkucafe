@@ -76,8 +76,9 @@ text-align: center;
   margin:20px 20px;
 }
 .box p{
-  max-width: 90%;
+  max-width: 100%;
 }
+
 /*フッター*/
 #footer{
   text-align: center;
@@ -123,7 +124,7 @@ text-align: center;
 .slide > .container > li.current{
   position: relative;
   z-index: 1;
-  opacity: 1;
+ opacity: 1;
 }
 /*スライドショーのボタン*/
 .slide a.prev,
@@ -159,7 +160,7 @@ text-align: center;
 /*スライドショー終わり*/
 
 /*RESPONSIVE*/
-@media screen and (max-width:600px){
+@media screen and (max-width:959px){
 html{
     font-size: 85%;
   }
